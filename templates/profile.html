@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block title %}Profile{% endblock %} {% block
+content %}
+<h2>Your Profile</h2>
+<p>Username: {{ user.username }}</p>
+<p>Email: {{ user.email }}</p>
+<p><a href="{{ url_for('logout') }}">Logout</a></p>
+
+<h2>Login</h2>
+<form method="POST" action="{{ url_for('login') }}">
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="password" name="password" placeholder="Password" required />
+  <button type="submit">Login</button>
+</form>
+
+<h2>Register</h2>
+<form method="POST" action="{{ url_for('register') }}">
+  <input type="text" name="username" placeholder="Username" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="password" name="password" placeholder="Password" required />
+  <button type="submit">Register</button>
+</form>
+{% endblock %}

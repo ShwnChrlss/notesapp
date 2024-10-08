@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}Notes{% endblock %} {% block content
+%}
+<h2>Your Notes</h2>
+<form method="POST">
+  <input type="text" name="title" placeholder="Note Title" required />
+  <textarea name="content" placeholder="Note Content" required></textarea>
+  <button type="submit">Add Note</button>
+</form>
+<div>
+  <h3>Existing Notes:</h3>
+  {% for note in notes %}
+  <div>
+    <h4>{{ note.title }}</h4>
+    <p>{{ note.content }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
