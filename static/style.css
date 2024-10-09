@@ -1,125 +1,90 @@
 /* General Styles */
+
+/* Body styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+  font-family: Arial, sans-serif; /* Use a clean font for the app */
+  background-color: #f8f9fa; /* Light background color for better contrast */
+  color: #343a40; /* Dark text color for readability */
   margin: 0;
   padding: 0;
-  color: #333;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Sidebar Styles */
+/* General Sidebar Styles */
 .sidebar {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: -250px; /* Initially hidden */
-  background-color: #007bff;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 60px;
+  height: 100%; /* Full height */
+  width: 250px; /* Set width */
+  position: fixed; /* Fixed sidebar */
+  z-index: 1; /* Sit on top */
+  top: 0; /* Stay at the top */
+  left: -250px; /* Hide sidebar */
+  background-color: #111; /* Sidebar color */
+  transition: 0.3s; /* Smooth transition */
 }
 
-.sidebar a {
-  padding: 10px 15px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-}
-
-.sidebar a:hover {
-  background-color: #0056b3;
-}
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-}
-
+/* Styles for Close Button */
 .closebtn {
-  font-size: 30px;
-  margin-left: 10px;
-  color: white;
+  position: absolute; /* Position it */
+  top: 20px; /* Position from the top */
+  right: 25px; /* Position from the right */
+  font-size: 36px; /* Size of the button */
+  color: white; /* Button color */
 }
 
-/* Form Styles */
-h2 {
-  color: #007bff;
-  text-align: center;
-  margin-bottom: 20px;
+/* Styles for Open Button */
+.openbtn {
+  font-size: 20px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Sidebar links */
+.sidebar nav a {
+  padding: 8px 8px 8px 32px; /* Padding for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 25px; /* Font size */
+  color: #818181; /* Link color */
+  display: block; /* Block display */
+  transition: 0.3s; /* Smooth transition */
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="password"],
-form input[type="file"],
-form textarea {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+/* Change link color on hover */
+.sidebar nav a:hover {
+  color: #f1f1f1; /* Change link color on hover */
+}
+/* Main content styles */
+#main {
+  transition: margin-left .5s; /* Transition effect for main content */
+  padding: 16px; /* Padding around main content */
 }
 
-form button {
-  width: 90%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
+/* Flash messages */
+.flashes {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
 }
 
-form button:hover {
-  background-color: #0056b3;
+.flashes li {
+  margin: 10px 0; /* Margin between messages */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .container {
-      width: 95%;
-  }
-  .sidebar {
-      width: 100%;
-      left: -100%; /* Initially hidden */
-  }
+/* Custom container */
+.custom-container {
+  margin-top: 20px; /* Space above container */
 }
 
-/* Customizing text and links */
-p {
-  text-align: center; /* Centered text */
-  font-size: 0.9rem; /* Slightly smaller font size */
+/* Custom card styles */
+.custom-card {
+  margin-top: 20px; /* Space above card */
+  border: 1px solid #ced4da; /* Border for card */
+  border-radius: 5px; /* Rounded corners */
 }
 
-a {
-  color: #007bff; /* Blue links */
+/* Button styles */
+.custom-btn {
+  background-color: #2062a8; /* Primary button color */
+  color: white; /* White text color */
 }
 
-a:hover {
-  color: #0056b3; /* Darker blue on hover */
+.custom-btn:hover {
+  background-color: #024892; /* Darker shade on hover */
 }
+
