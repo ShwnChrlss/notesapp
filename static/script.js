@@ -1,6 +1,14 @@
 // script.js
 
-// Add JavaScript functions for sidebar navigation
+// Function to open the sidebar
+function openNav() {
+  document.getElementById("sidebar").style.left = "0";
+}
+
+// Function to close the sidebar
+function closeNav() {
+  document.getElementById("sidebar").style.left = "-250px";
+}
 
 // Add event listeners for logout buttons
 document.addEventListener("DOMContentLoaded", function () {
