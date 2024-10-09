@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style2.css') }}"
+    />
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <title>{% block title %}My Application{% endblock %}</title>
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <button class="closebtn" onclick="closeNav()">×</button>
+      <nav>
+        <a href="{{ url_for('notes') }}">Notes</a>
+        <a href="{{ url_for('profile') }}">Profile</a>
+        <a href="{{ url_for('upload_file') }}">Upload</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+      </nav>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <div class="container">
+        {% with messages = get_flashed_messages(with_categories=True) %} {% if
+        messages %}
+        <ul class="flashes">
+          {% for category, message in messages %}
+          <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %} {% endwith %} {% block content %}{% endblock %}
+      </div>
+    </div>
+  </body>
+</html>
