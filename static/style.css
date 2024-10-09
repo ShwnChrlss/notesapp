@@ -2,16 +2,16 @@
 
 /* Body styles */
 body {
-  font-family: Arial, sans-serif; /* Use a clean font for the app */
-  background-color: #f8f9fa; /* Light background color for better contrast */
-  color: #343a40; /* Dark text color for readability */
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
   margin: 0;
   padding: 0;
 }
 
-/* General Sidebar Styles */
+/* Sidebar styles */
 .sidebar {
-  height: 100%; /* Full height */
+  height: 100%;
   width: 250px; /* Set width */
   position: fixed; /* Fixed sidebar */
   z-index: 1; /* Sit on top */
@@ -19,6 +19,7 @@ body {
   left: -250px; /* Hide sidebar */
   background-color: #111; /* Sidebar color */
   transition: 0.3s; /* Smooth transition */
+  padding-top: 20px; /* Padding at the top */
 }
 
 /* Styles for Close Button */
@@ -30,17 +31,11 @@ body {
   color: white; /* Button color */
 }
 
-/* Styles for Open Button */
-.openbtn {
-  font-size: 20px; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-}
-
 /* Sidebar links */
 .sidebar nav a {
-  padding: 8px 8px 8px 32px; /* Padding for links */
+  padding: 10px 15px; /* Padding for links */
   text-decoration: none; /* Remove underline */
-  font-size: 25px; /* Font size */
+  font-size: 18px; /* Font size */
   color: #818181; /* Link color */
   display: block; /* Block display */
   transition: 0.3s; /* Smooth transition */
@@ -50,10 +45,11 @@ body {
 .sidebar nav a:hover {
   color: #f1f1f1; /* Change link color on hover */
 }
-/* Main content styles */
+
+/* Main content area */
 #main {
-  transition: margin-left .5s; /* Transition effect for main content */
-  padding: 16px; /* Padding around main content */
+  transition: margin-left 0.5s; /* Smooth transition for main content */
+  padding: 16px; /* Padding for main content */
 }
 
 /* Flash messages */
@@ -65,26 +61,3 @@ body {
 .flashes li {
   margin: 10px 0; /* Margin between messages */
 }
-
-/* Custom container */
-.custom-container {
-  margin-top: 20px; /* Space above container */
-}
-
-/* Custom card styles */
-.custom-card {
-  margin-top: 20px; /* Space above card */
-  border: 1px solid #ced4da; /* Border for card */
-  border-radius: 5px; /* Rounded corners */
-}
-
-/* Button styles */
-.custom-btn {
-  background-color: #2062a8; /* Primary button color */
-  color: white; /* White text color */
-}
-
-.custom-btn:hover {
-  background-color: #024892; /* Darker shade on hover */
-}
-
