@@ -109,3 +109,17 @@ form button:hover {
       left: -100%; /* Initially hidden */
   }
 }
+
+/* Customizing text and links */
+p {
+  text-align: center; /* Centered text */
+  font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+a {
+  color: #007bff; /* Blue links */
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}

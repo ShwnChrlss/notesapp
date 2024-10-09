@@ -1,0 +1,54 @@
+/* Customizing .container */
+.custom-container {
+  max-width: 600px; /* Reduced width for a more compact form */
+  padding: 30px; /* More padding for better spacing */
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Customizing .row */
+.custom-row {
+  margin-top: 50px; /* More space from the top */
+  margin-bottom: 50px; /* More space from the bottom */
+}
+
+/* Customizing .col-md-6 */
+.custom-col {
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 20px; /* More padding for content */
+  border-radius: 8px; /* Slightly more rounded corners */
+}
+
+/* Custom card */
+.custom-card {
+  background: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Custom button */
+.custom-btn {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border-radius: 25px; /* Rounded button */
+  padding: 10px; /* More padding */
+  font-size: 1.1rem; /* Slightly larger font size */
+}
+
+.custom-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Customizing form control */
+.form-control {
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* More padding */
+}
+
+.form-control:focus {
+  border-color: #0056b3; /* Darker blue on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+}

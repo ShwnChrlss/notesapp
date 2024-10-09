@@ -1,0 +1,124 @@
+/* General Styles */
+/* Sets the overall font, background color, margin, padding, and text color for the body. */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Styles the main container to have a width of 80%, centered alignment, padding, background color, rounded corners, and a subtle shadow. */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Styles */
+/* Defines the sidebar's height, width, position, z-index, top alignment, initial hidden state, background color, overflow behavior, transition effect, and top padding. */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px; /* Initially hidden */
+  background-color: #007bff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+/* Styles for the links inside the sidebar: padding, text decoration, font size, color, display type. */
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+/* Changes background color on hover for sidebar links. */
+.sidebar a:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the open button: font size, cursor type, background color, text color, border, padding, margin, and border-radius. */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+/* Styles for the close button: font size, left margin, and text color. */
+.closebtn {
+  font-size: 30px;
+  margin-left: 10px;
+  color: white;
+}
+
+/* Form Styles */
+/* Styles for the h2 heading: text color, text alignment, and bottom margin. */
+h2 {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form layout: display type, flex direction, and center alignment for children. */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input and textarea styles: width, padding, margin, border style, and border-radius. */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="file"],
+form textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styles: width, padding, background color, text color, border style, border-radius, cursor type, and font size. */
+form button {
+  width: 90%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Button hover effect: changes background color. */
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+/* Adjustments for screens with a max width of 768px: container width and sidebar initial hidden state. */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .sidebar {
+    width: 100%;
+    left: -100%; /* Initially hidden */
+  }
+}
